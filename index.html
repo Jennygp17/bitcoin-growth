@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcoin</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        180.3deg,
+        rgb(221, 221, 221) 5.5%,
+        rgb(110, 136, 161) 90.2%
+      );
+    }
+    h1 {
+      font-family: system-ui, -apple-system;
+      font-size: 48px;
+      text-align: center;
+      line-height: 3px;
+    }
+    h2 {
+      font-family: system-ui, -apple-system;
+      font-size: 40px;
+      text-align: center;
+      padding: 10px;
+    }
+    .BTCgif{
+        display: block;
+        margin: 0 auto;
+
+    }
+    .BTCChart {
+      display: block;
+      margin: 0 auto;
+      max-width: 80%;
+      border-radius: 0;
+      width: 500px;
+      height: 400px;
+      padding: 5px;
+    }
+    p {
+      font-family: system-ui;
+      font-size: 18px;
+      padding: 10px;
+      max-width: 100%;
+     text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color: blue;
+        font-weight: bolder;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    .tradingViewLink {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      font-family: system-ui;
+      font-size: 22px;
+      text-decoration: none;
+      line-height: 10px;
+    }
+    .moreBTCInfo{
+        display: block;
+        margin: 10px auto;
+        padding: 20px 30px;
+        font-size: 18px;
+        border: none;
+        border-radius: 10px;
+        background-color: black;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+        color: white;
+        cursor: pointer;
+        line-height: 10px;
+        transition: all 200ms ease-in-out;
+    }
+    .moreBTCInfo:hover{
+        color: black;
+        background-color: white;
+        
+    }
+  </style>
+  <body>
+    <h1>Cryptocurrency</h1>
+    <h2>📈The History and Growth of Bitcoin📈</h2>
+    
+    <img
+      src="https://media2.giphy.com/media/LukAHGCMfxMbK/giphy.gif?cid=ecf05e47dcrkk4wh8fgjlp3tci4z6jth9d1v3qsqijvjf28w&rid=giphy.gif&ct=g"
+      target="_blank"
+      alt="bitcoinGif"
+      class="BTCgif"
+    />
+    <p>
+      <strong><em>Bitcoin</em></strong> is a cryptocurrency, a digital asset that ues
+      cryptography to control its creation and management, rather than relying
+      on central authorities. Orignally designed as a medium of exchange.
+      Bitcoin is now primarily regarded as a store of value. The history of
+      bitcoin started with its invention and implementation by
+      <em><a href="https://en.wikipedia.org/wiki/Satoshi_Nakamoto" target="_blank" class="satNaka">Satoshi Nakamoto</em>
+    </a>, who integrated the existing ideas from the cryptography community. Over
+      the course of bitcoin's history, it has indergone rapid growth to become a
+      significant store of value both on-and-offline. From 2010's businesses
+      began accepting bitcoin in addition to traditional currencies and more
+      recently Countries have adopted bitcoin as legal tender.
+    </p>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/037/249/original/History_of_Bitcoin.png?1655235009"
+      target="_blank"
+      alt="bitcoinGrowthChart"
+      class="BTCChart"
+    />
+    <p>
+     <div class="tradingViewLink">To see the live bitcoin chart 👉
+      <a
+        href="https://www.tradingview.com/symbols/BTCUSD/"
+        target="_blank"
+        class="link"
+        >Click here</a
+      >
+      </div>
+    </p>
+    <button class="moreBTCInfo">Click here for more bitcoin info</button>
+    <p class="footer">
+      This website was created by
+      <a
+        href="https://www.linkedin.com/"
+        target="_blank"
+        class="linkedInProfile"
+        >JGP</a
+      >
+    </p>
+    <script>
+        function BTCInfo(){
+            let name = prompt("What is your name?");
+            let email = prompt("What is your email address?");
+            let h1 = document.querySelector("h1");
+            let h2 = document.querySelector("h2");
+           h1.innerHTML = "Thanks "+name+"! More information on BTC will be sent to; ";
+           h2.innerHTML = email;
+        }
+       let infoButton =document.querySelector(".moreBTCInfo");
+       infoButton.addEventListener("click", BTCInfo);
+
+    </script>
+  </body>
+</html>
